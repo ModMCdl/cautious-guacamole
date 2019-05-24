@@ -1,0 +1,6 @@
+#Ignore everything EXCEPT specified directories
+/*
+!/src
+!build.gradle
+!gradle.properties
+!.gitignore
