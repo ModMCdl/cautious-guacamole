@@ -1,0 +1,16 @@
+[
+{
+  "modid": "envie",
+  "name": "Envie",
+  "description": "Adds simple enhancements and expansions to Vanilla Minecraft.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["ModMCdl"],
+  "credits": "ModMCdl - AMDT",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
