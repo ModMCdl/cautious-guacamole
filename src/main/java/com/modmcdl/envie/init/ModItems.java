@@ -12,6 +12,6 @@ public class ModItems
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
 	//-----Item List-----//
-	public static final Item PETAL = new ItemPetal("petal");	
+	public static final Item PETAL = new ItemPetal("petal");
 	
 }

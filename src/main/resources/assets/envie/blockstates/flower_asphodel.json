@@ -1,0 +1,10 @@
+{
+    "variants": 
+    {
+        "normal":
+        [
+            { "model": "envie:asphodel_var0" },
+            { "model": "envie:asphodel_var1" }
+        ]
+    }
+}
