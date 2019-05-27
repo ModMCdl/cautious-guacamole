@@ -11,6 +11,7 @@ public class ItemEnvieBase extends Item implements IHasModel
 	{
 		this.setUnlocalizedName(EnvieMod.MODID + "." + name);
 		this.setRegistryName(name);
+		this.setCreativeTab(EnvieMod.envietab);
 	}
 	
 	@Override

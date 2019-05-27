@@ -1,8 +1,12 @@
 package com.modmcdl.envie;
 
+import com.modmcdl.envie.init.ModBlocks;
+import com.modmcdl.envie.init.ModItems;
 import com.modmcdl.envie.proxies.CommonProxy;
 import com.modmcdl.envie.util.handlers.RegistryHandler;
 
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -23,6 +27,22 @@ public class EnvieMod
 	
 	public static final String CLIENT_PROXY_CLASS = "com.modmcdl.envie.proxies.ClientProxy";
 	public static final String COMMON_PROXY_CLASS = "com.modmcdl.envie.proxies.CommonProxy";
+	
+	
+	public static final CreativeTabs envietab = (new CreativeTabs("envietab")
+			{
+				@Override
+				public ItemStack getTabIconItem()
+				{
+					return new ItemStack(ModBlocks.ASPHODEL);
+				}
+				
+				@Override
+				public boolean hasSearchBar()
+				{
+					return false;
+				}
+			});
 	
 	//Main
 	@Instance

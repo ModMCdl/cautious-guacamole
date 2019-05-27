@@ -34,6 +34,7 @@ public class FlowerAsphodel extends BlockBush implements IHasModel
 		
 		this.setUnlocalizedName(name);
 		this.setRegistryName(name);
+		this.setCreativeTab(EnvieMod.envietab);
 		this.setSoundType(SoundType.PLANT);
 		
 		ModBlocks.BLOCKS.add(this);
@@ -62,7 +63,6 @@ public class FlowerAsphodel extends BlockBush implements IHasModel
     {
         return Block.EnumOffsetType.XZ;
     }
-	
 	
 	public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face)
     {
