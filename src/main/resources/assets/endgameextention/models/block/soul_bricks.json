@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "endgameextention:blocks/soul_bricks"
+    }
+}

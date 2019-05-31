@@ -1,8 +1,8 @@
 [
 {
-  "modid": "envie",
-  "name": "Envie",
-  "description": "Adds simple enhancements and expansions to Vanilla Minecraft.",
+  "modid": "endgameextention",
+  "name": "Endgame Extension",
+  "description": "Expands the endgame to Vanilla Minecraft.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
