@@ -57,6 +57,7 @@ public class EndgameExtention
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		RegistryHandler.preInitRegistries(event);
+		RegistryHandler.otherRegistries();
 	}
 	public void init(FMLInitializationEvent event)
 	{

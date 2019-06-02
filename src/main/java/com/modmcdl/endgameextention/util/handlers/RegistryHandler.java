@@ -1,5 +1,6 @@
 package com.modmcdl.endgameextention.util.handlers;
 
+import com.modmcdl.endgameextention.init.ModBiomes;
 import com.modmcdl.endgameextention.init.ModBlocks;
 import com.modmcdl.endgameextention.init.ModItems;
 import com.modmcdl.endgameextention.util.IHasModel;
@@ -59,5 +60,10 @@ public class RegistryHandler
 	{
 		Blocks.DRAGON_EGG.setCreativeTab(CreativeTabs.DECORATIONS);
 		Blocks.COMMAND_BLOCK.setCreativeTab(CreativeTabs.REDSTONE);
+	}
+	
+	public static void otherRegistries()
+	{
+		ModBiomes.registerBiomes();
 	}
 }
