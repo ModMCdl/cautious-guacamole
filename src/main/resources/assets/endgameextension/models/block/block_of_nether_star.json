@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "endgameextension:blocks/star_block"
+    }
+}

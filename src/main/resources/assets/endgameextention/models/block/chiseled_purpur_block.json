@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "endgameextention:blocks/chiseled_purpur_top",
-        "side": "endgameextention:blocks/chiseled_purpur"
-    }
-}

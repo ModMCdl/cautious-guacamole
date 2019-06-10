@@ -1,0 +1,10 @@
+{
+    "variants": 
+    {
+        "normal":
+        [
+            { "model": "endgameextension:asphodel_var0" },
+            { "model": "endgameextension:asphodel_var1" }
+        ]
+    }
+}
