@@ -22,7 +22,7 @@ public class EndgameExtension
 	//References
 	public static final String MODID = "endgameextension";
 	public static final String NAME = "Endgame Extension";
-	public static final String VERSION = "0.0.1";
+	public static final String VERSION = "0.1.2";
 	public static final String ACCEPTEDVERSIONS = "[1.12.2]";
 	
 	public static final String CLIENT_PROXY_CLASS = "com.modmcdl.endgameextension.proxies.ClientProxy";

@@ -22,12 +22,16 @@ import net.minecraftforge.fml.common.gameevent.TickEvent.WorldTickEvent;
 @EventBusSubscriber
 public class WorldEventHandler 
 {
+	
+	//Notice on world join
 	@SubscribeEvent
 	public static void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event)
 	{
-		event.player.sendMessage(new TextComponentString("\\u00A76[Endgame Extension]: \\u00A7eThis mod is still being developed. Help us and report any bugs you find!"));
+		event.player.sendMessage(new TextComponentString("\u00A76[Endgame Extension]: \u00A7eThis mod is still being developed. Help us and report any bugs you find!"));
 	}
 	
+	
+	//Convert Nether Star to Quenched Star
 	@SubscribeEvent
     public static void onWorldTick(WorldTickEvent event)
     {
