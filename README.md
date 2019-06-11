@@ -1,8 +1,8 @@
-# ENVIE
+# ENDGAME EXTENSION
 ###### Minecraft Mod for v1.12.2
-Adding little enhancements and expansions to Vanilla Minecraft.
+Extends the Nether Endgame for Minecraft. More stuff to do with Nether Stars!
 
 # Developed by:
-ModMCdl
+ModMCdl - Artemis Mod Development Team
 
 ====================================
