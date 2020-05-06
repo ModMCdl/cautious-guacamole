@@ -1,22 +1,21 @@
 package com.modmcdl.endgameextension.blocks;
 
-import javax.annotation.Nonnull;
-
 import com.modmcdl.endgameextension.EndgameExtension;
 import com.modmcdl.endgameextension.init.ModBlocks;
 import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.util.IHasModel;
-
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.boss.EntityWither;
-import net.minecraft.entity.projectile.EntityWitherSkull;
+import net.minecraft.entity.boss.WitherEntity;
+import net.minecraft.entity.projectile.WitherSkullEntity;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemBlock;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.IBlockReader;
+
+import javax.annotation.Nonnull;
 
 public class BlockNetherStar extends Block implements IHasModel
 {
@@ -29,11 +28,11 @@ public class BlockNetherStar extends Block implements IHasModel
 		this.setHardness(50.0F);
 		this.setResistance(6442450944F);
 		this.setLightLevel(0.2F);
-		
+
 		this.setCreativeTab(EndgameExtension.endtab);
 		
 		ModBlocks.BLOCKS.add(this);
-		ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+		ModItems.ITEMS.add(new BlockItem(this).setRegistryName(this.getRegistryName()));
 	}
 
 	@Override
@@ -43,16 +42,16 @@ public class BlockNetherStar extends Block implements IHasModel
 	}
 	
 	@Override
-	public boolean canEntityDestroy(@Nonnull IBlockState state, @Nonnull IBlockAccess world, @Nonnull BlockPos pos, @Nonnull Entity entity) 
+	public boolean canEntityDestroy(@Nonnull BlockState state, @Nonnull IBlockReader world, @Nonnull BlockPos pos, @Nonnull Entity entity)
 	{
-		return !(entity instanceof EntityWither) && !(entity instanceof EntityWitherSkull);
+		return !(entity instanceof WitherEntity) && !(entity instanceof WitherSkullEntity);
 	}
 	
 	@Override
-	public boolean isBeaconBase(IBlockAccess worldObj, BlockPos pos, BlockPos beacon) 
+	public boolean isBeaconBase(IBlockReader worldObj, BlockPos pos, BlockPos beacon)
 	{
 		return true;
 	}
-	
-	
+
+
 }

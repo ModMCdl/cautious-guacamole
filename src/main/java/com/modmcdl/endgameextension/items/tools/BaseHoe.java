@@ -4,9 +4,9 @@ import com.modmcdl.endgameextension.EndgameExtension;
 import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.util.IHasModel;
 
-import net.minecraft.item.ItemHoe;
+import net.minecraft.item.HoeItem;
 
-public class BaseHoe extends ItemHoe implements IHasModel
+public class BaseHoe extends HoeItem implements IHasModel
 {
 	public BaseHoe(String name, ToolMaterial material)
 	{

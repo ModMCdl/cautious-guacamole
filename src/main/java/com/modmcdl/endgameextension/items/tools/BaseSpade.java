@@ -4,9 +4,9 @@ import com.modmcdl.endgameextension.EndgameExtension;
 import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.util.IHasModel;
 
-import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ShovelItem;
 
-public class BaseSpade extends ItemSpade implements IHasModel
+public class BaseSpade extends ShovelItem implements IHasModel
 {
 	public BaseSpade(String name, ToolMaterial material)
 	{

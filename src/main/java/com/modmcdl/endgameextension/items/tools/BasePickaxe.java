@@ -4,9 +4,9 @@ import com.modmcdl.endgameextension.EndgameExtension;
 import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.util.IHasModel;
 
-import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.PickaxeItem;
 
-public class BasePickaxe extends ItemPickaxe implements IHasModel
+public class BasePickaxe extends PickaxeItem implements IHasModel
 {
 
 	public BasePickaxe(String name, ToolMaterial material)
