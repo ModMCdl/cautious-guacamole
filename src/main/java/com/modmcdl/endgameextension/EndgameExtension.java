@@ -27,38 +27,8 @@ public class EndgameExtension
 			{
 				@Override
 				public ItemStack createIcon() {
-				{
-					return new ItemStack(ModItems.QUENCHED_STAR);
+					{
+						return new ItemStack(ModItems.QUENCHED_STAR);
 
-
-			};
-
-	//Main
-	@Instance
-	public static EndgameExtension instance;
-
-	//Proxies
-	@SidedProxy(clientSide = EndgameExtension.CLIENT_PROXY_CLASS, serverSide = EndgameExtension.COMMON_PROXY_CLASS)
-	public static CommonProxy proxy;
-	
-	//Initialization
-	@EventHandler
-	public void preInit(FMLPreInitializationEvent event)
-	{
-		RegistryHandler.preInitRegistries(event);
-	}
-	public void init(FMLInitializationEvent event)
-	{
-		
-	}
-	public static void (final FMLPostInitializationEvent event)
-	{
-		System.out.println("We're in the Endgame now... [Endgame Expansion Loaded].");
-	}
-	
-	//ServerInitialization
-	public void serverInit(final FMLServerStartingEvent event)
-	{
-		System.out.println("We're in the Endgame now... [Endgame Expansion Loaded].");
-	}
-}
+					}
+				}
