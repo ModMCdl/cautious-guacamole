@@ -23,12 +23,13 @@ public class EndgameExtension
 	public static final String COMMON_PROXY_CLASS = "com.modmcdl.endgameextension.proxies.CommonProxy";
 	
 
-	public static final ItemGroup ITEM_GROUP = (new ItemGroup("EndgameExtension")
+	public static final ItemGroup ITEM_GROUP = (new ItemGroup("EndgameExtension") {
+		@Override
+		public ItemStack createIcon() {
 			{
-				@Override
-				public ItemStack createIcon() {
-					{
-						return new ItemStack(ModItems.QUENCHED_STAR);
+				return new ItemStack(ModItems.QUENCHED_STAR);
 
-					}
-				}
+
+			}
+
+		}
