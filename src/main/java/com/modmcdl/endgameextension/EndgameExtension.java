@@ -9,7 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 
 
 @Mod.EventBusSubscriber(modid = EndgameExtension.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
-public class EndgameExtension 
+public class EndgameExtension
 {
 	//References
 	public static final String MODID = "endgameextension";
@@ -18,13 +18,10 @@ public class EndgameExtension
 	public static final String ACCEPTEDVERSIONS = "[1.14.4]";
 
 
-	public static final ItemGroup ITEM_GROUP = (new ItemGroup("EndgameExtension") {
+	public static final ItemGroup ITEM_GROUP = new ItemGroup("EndgameExtension") {
 		@Override
 		public ItemStack createIcon() {
-			{
-				return new ItemStack(ModItems.QUENCHED_STAR);
-
-
-			}
-
+			return new ItemStack(ModItems.QUENCHED_STAR);
 		}
+	};
+}
