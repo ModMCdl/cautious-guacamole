@@ -4,13 +4,11 @@ import com.modmcdl.endgameextension.EndgameExtension;
 import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.util.IHasModel;
 
-import net.minecraft.item.SwordItem;
+import net.minecraft.item.HoeItem;
 
-
-public class BaseSword extends SwordItem implements IHasModel
+public class WitherHoe extends HoeItem implements IHasModel
 {
-
-	public BaseSword(String name, ToolMaterial material)
+	public WitherHoe(String name, ToolMaterial material)
 	{
 		super(material);
 		setUnlocalizedName(name);
@@ -19,11 +17,10 @@ public class BaseSword extends SwordItem implements IHasModel
 		
 		ModItems.ITEMS.add(this);
 	}
-
+	
 	@Override
 	public void registerModels() 
 	{
 		EndgameExtension.proxy.registerItemRenderer(this, 0, "inventory");
 	}
-
 }

@@ -4,11 +4,11 @@ import com.modmcdl.endgameextension.EndgameExtension;
 import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.util.IHasModel;
 
-import net.minecraft.item.HoeItem;
+import net.minecraft.item.ShovelItem;
 
-public class BaseHoe extends HoeItem implements IHasModel
+public class WitherShovel extends ShovelItem implements IHasModel
 {
-	public BaseHoe(String name, ToolMaterial material)
+	public WitherShovel(String name, ToolMaterial material)
 	{
 		super(material);
 		setUnlocalizedName(name);

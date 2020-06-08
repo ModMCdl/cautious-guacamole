@@ -4,11 +4,13 @@ import com.modmcdl.endgameextension.EndgameExtension;
 import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.util.IHasModel;
 
-import net.minecraft.item.ShovelItem;
+import net.minecraft.item.SwordItem;
 
-public class BaseSpade extends ShovelItem implements IHasModel
+
+public class WitherSword extends SwordItem implements IHasModel
 {
-	public BaseSpade(String name, ToolMaterial material)
+
+	public WitherSword(String name, ToolMaterial material)
 	{
 		super(material);
 		setUnlocalizedName(name);
@@ -17,10 +19,11 @@ public class BaseSpade extends ShovelItem implements IHasModel
 		
 		ModItems.ITEMS.add(this);
 	}
-	
+
 	@Override
 	public void registerModels() 
 	{
 		EndgameExtension.proxy.registerItemRenderer(this, 0, "inventory");
 	}
+
 }

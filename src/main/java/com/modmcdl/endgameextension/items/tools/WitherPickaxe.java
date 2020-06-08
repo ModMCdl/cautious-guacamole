@@ -6,10 +6,10 @@ import com.modmcdl.endgameextension.util.IHasModel;
 
 import net.minecraft.item.PickaxeItem;
 
-public class BasePickaxe extends PickaxeItem implements IHasModel
+public class WitherPickaxe extends PickaxeItem implements IHasModel
 {
 
-	public BasePickaxe(String name, ToolMaterial material)
+	public WitherPickaxe(String name, ToolMaterial material)
 	{
 		super(material);
 		setUnlocalizedName(name);

@@ -6,22 +6,25 @@ import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ToolItem;
 
 import java.util.Set;
 
-public class BaseAxe extends ToolItem implements IHasModel
+
+
+public class WitherAxe extends ToolItem implements IHasModel
 {
-	private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet(blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN, Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE);
+	private static final Set<Block> EFFECTIVE_ON = Sets.newHashSet( Blocks.BOOKSHELF, Blocks.OAK_WOOD, Blocks.BIRCH_WOOD, Blocks.CHEST, Blocks.PUMPKIN, Blocks.CARVED_PUMPKIN, Blocks.MELON, Blocks.LADDER,  Blocks.OAK_PRESSURE_PLATE);
 	
-	public BaseAxe(String name, ToolMaterial material) 
+	public WitherAxe(String name, ToolMaterial material)
 	{
 		super(material, EFFECTIVE_ON);
-		setUnlocalizedName(name);
+		setTranslationKey(name);
 		setRegistryName(name);
-		setCreativeTab(EndgameExtension.endtab);
+		.group(EndgameExtension.;
 		
 		this.attackSpeed = -3.0F;
 		this.attackDamage = 10.0F;
