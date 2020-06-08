@@ -3,16 +3,13 @@ package com.modmcdl.endgameextension.util.handlers;
 import com.modmcdl.endgameextension.init.ModBlocks;
 import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.util.IHasModel;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @EventBusSubscriber
 public class RegistryHandler 
