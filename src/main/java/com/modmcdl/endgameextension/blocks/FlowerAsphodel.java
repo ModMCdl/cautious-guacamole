@@ -1,66 +1,42 @@
 package com.modmcdl.endgameextension.blocks;
 
-import com.modmcdl.endgameextension.EndgameExtension;
+
 import com.modmcdl.endgameextension.init.ModBlocks;
-import com.modmcdl.endgameextension.init.ModItems;
-import com.modmcdl.endgameextension.util.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.BushBlock;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.material.Material;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.world.IBlockReader;
 
-import javax.annotation.Nullable;
+import static com.modmcdl.endgameextension.EndgameExtension.MODID;
 
-public class FlowerAsphodel extends BushBlock implements IHasModel
+public class FlowerAsphodel extends BushBlock
 {
 	
-	private static final AxisAlignedBB TALLBOX = new AxisAlignedBB(.0625 * 1, 0, .0625 * 1, .0625 * 15, .0625 * 30, .0625 * 15);
-	
-	public FlowerAsphodel(String name, Material material)
+
+	protected static final VoxelShape SHAPE = Block.makeCuboidShape(0.625D, 1D, 1D, 15D, 30D, 15D);
+
+	public FlowerAsphodel(String name, Properties properties)
 	{
-		super(material);
-		
-		this.setUnlocalizedName(name);
-		this.setRegistryName(name);
-		this.setCreativeTab(EndgameExtension.endtab);
-		this.setSoundType(SoundType.PLANT);
-		
+		super(properties.hardnessAndResistance(0.0F).sound(SoundType.PLANT).doesNotBlockMovement());
+		this.setRegistryName(MODID, name);
 		ModBlocks.BLOCKS.add(this);
-		ModItems.ITEMS.add(new BlockItem(this).setRegistryName(this.getRegistryName()));
+
 	}
 
-	@Override
-	public void registerModels() 
-	{
-		EndgameExtension.proxy.registerItemRenderer(Item.getItemFromBlock(this), 0, "inventory");
-	}
+
+
 	
-	@Override //Bounding box
-	public AxisAlignedBB getBoundingBox(BlockState state, IBlockReader source, BlockPos pos)
-	{
-		return TALLBOX;
-	}
+
 	
-	@Nullable
-    public AxisAlignedBB getCollisionBoundingBox(BlockState blockState, IBlockReader worldIn, BlockPos pos)
+	public VoxelShape getShape(IBlockReader worldIn, BlockState state, BlockPos pos, ISelectionContext context)
     {
-        return NULL_AABB;
-    }
-	
-	public Block.EnumOffsetType getOffsetType()
-    {
-        return Block.EnumOffsetType.XZ;
-    }
-	
-	public BlockFaceShape getBlockFaceShape(IBlockReader worldIn, BlockState state, BlockPos pos, EnumFacing face)
-    {
-        return BlockFaceShape.UNDEFINED;
+		Vec3d vec3d = state.getOffset(worldIn, pos);
+		return SHAPE.withOffset(vec3d.x, vec3d.y, vec3d.z);
     }
 	
 }
