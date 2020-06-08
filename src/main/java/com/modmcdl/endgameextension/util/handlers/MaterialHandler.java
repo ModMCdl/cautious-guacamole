@@ -1,7 +1,5 @@
 package com.modmcdl.endgameextension.util.handlers;
 
-import net.minecraft.item.Item.ToolMaterial;
-import net.minecraftforge.common.util.EnumHelper;
 
 public class MaterialHandler 
 {
