@@ -2,6 +2,7 @@ package com.modmcdl.endgameextension.blocks;
 
 
 import com.modmcdl.endgameextension.EndgameExtension;
+import com.modmcdl.endgameextension.init.EndgameExtensionTab;
 import com.modmcdl.endgameextension.init.ModBlocks;
 import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.util.IHasModel;
@@ -25,9 +26,10 @@ public class BlockSoulBricks extends Block implements IHasModel
 		this.setHardness(30F);
 		this.setResistance(6000F);
 		this.setHarvestLevel("pickaxe", 10);
-		
-		this.setCreativeTab(EndgameExtension.endtab);
-		
+
+		super(properties.group(EndgameExtensionTab.items));
+
+
 		ModBlocks.BLOCKS.add(this);
 		ModItems.ITEMS.add(new BlockItem(this).setRegistryName(this.getRegistryName()));
 	}
