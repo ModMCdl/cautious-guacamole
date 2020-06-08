@@ -1,19 +1,13 @@
 package com.modmcdl.endgameextension.init;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import com.modmcdl.endgameextension.items.ItemEnvieBase;
 import com.modmcdl.endgameextension.items.ItemQuenchedStar;
 import com.modmcdl.endgameextension.items.ItemStarShard;
-import com.modmcdl.endgameextension.items.tools.BaseAxe;
-import com.modmcdl.endgameextension.items.tools.BaseHoe;
-import com.modmcdl.endgameextension.items.tools.BasePickaxe;
-import com.modmcdl.endgameextension.items.tools.BaseSpade;
-import com.modmcdl.endgameextension.items.tools.BaseSword;
+import com.modmcdl.endgameextension.items.tools.*;
 import com.modmcdl.endgameextension.util.handlers.MaterialHandler;
-
 import net.minecraft.item.Item;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ModItems 
 {
@@ -25,10 +19,10 @@ public class ModItems
 	
 	//-----Tools-----//
 	
-	public static final Item WITHER_PICKAXE = new BasePickaxe("wither_pickaxe", MaterialHandler.WITHER);
-	public static final Item WITHER_SWORD = new BaseSword("wither_sword", MaterialHandler.WITHER);
-	public static final Item WITHER_AXE = new BaseAxe("wither_axe", MaterialHandler.WITHER);
-	public static final Item WITHER_HOE = new BaseHoe("wither_hoe", MaterialHandler.WITHER);
-	public static final Item WITHER_SPADE = new BaseSpade("wither_shovel", MaterialHandler.WITHER);
+	public static final Item WITHER_PICKAXE = new WitherPickaxe("wither_pickaxe", MaterialHandler.WITHER);
+	public static final Item WITHER_SWORD = new WitherSword("wither_sword", MaterialHandler.WITHER);
+	public static final Item WITHER_AXE = new WitherAxe("wither_axe", MaterialHandler.WITHER);
+	public static final Item WITHER_HOE = new WitherHoe("wither_hoe", MaterialHandler.WITHER);
+	public static final Item WITHER_SPADE = new WitherShovel("wither_shovel", MaterialHandler.WITHER);
 	
 }
