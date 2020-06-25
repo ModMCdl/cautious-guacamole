@@ -16,7 +16,7 @@ public class ModBlocks
 	
 	//-----Block List-----//
 	
-	public static final Block ASPHODEL = new FlowerAsphodel("flower_asphodel", Material.PLANTS);
+	public static final Block ASPHODEL = new FlowerAsphodel("flower_asphodel", Block.Properties.create(Material.PLANTS));
 	public static final Block NETHER_STAR_BLOCK = new BlockNetherStar("block_of_nether_star", Material.GLASS);
 	
 	public static final Block SOUL_BRICKS = new BlockSoulBricks("soul_bricks", Material.ROCK);
