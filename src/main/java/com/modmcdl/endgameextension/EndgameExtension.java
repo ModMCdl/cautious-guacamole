@@ -2,9 +2,8 @@ package com.modmcdl.endgameextension;
 
 
 import com.modmcdl.endgameextension.init.ModItems;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
+import com.modmcdl.endgameextension.init.ToolMaterialList;
+import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -13,7 +12,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -30,7 +28,8 @@ public class EndgameExtension {
 
 	public static final ItemGroup ITEM_GROUP = new EndgameExtension() {
 
-		public EndgameExtension() {
+		public EndgameExtension()
+		{
 			instance = this;
 			FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 			FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientRegistries);
@@ -53,7 +52,14 @@ public class EndgameExtension {
 		public static void registerItems(final RegistryEvent.Register<Item> event) {
 			event.getRegistry().registerAll
 					(
-							ModItems.WITHER_AXE = new ItemAxe
+							ModItems.WITHER_AXE = new AxeItem(ToolMaterialList.nether_star_shard, -1.0f, 1.0f, new Item.Properties().group(EndgameExtension)).setRegestryName(location("wither_axe")),
+							ModItems.WITHER_HOE = new HoeItem(ToolMaterialList.nether_star_shard, 9.0f, new Item.Properties().group(EndgameExtension)).setRegestryName(location("wither_hoe")),
+							ModItems.WITHER_PICKAXE = new PickaxeItem(ToolMaterialList.nether_star_shard, -2.0f, 1.2f, new Item.Properties().group(EndgameExtension)).setRegestryName(location("wither_pickaxe")),
+							ModItems.WITHER_SPADE = new ShovelItem(ToolMaterialList.nether_star_shard, -1.5f, 1.0f, new Item.Properties().group(EndgameExtension)).setRegestryName(location("wither_shovel")),
+							ModItems.WITHER_SWORD = new SwordItem(ToolMaterialList.nether_star_shard, 0.0f, 1.6f, new Item.Properties().group(EndgameExtension)).setRegestryName(location("wither_sword"))
+
+
+
 					);
 			Logger.info("Items registered.");
 		}
