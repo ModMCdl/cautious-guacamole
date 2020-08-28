@@ -19,10 +19,10 @@ public class ModItems
 	
 	//-----Tools-----//
 	
-	public static final Item WITHER_PICKAXE = new WitherPickaxe("wither_pickaxe", MaterialHandler.WITHER);
-	public static final Item WITHER_SWORD = new WitherSword("wither_sword", MaterialHandler.WITHER);
-	public static final Item WITHER_AXE = new WitherAxe("wither_axe", MaterialHandler.WITHER);
-	public static final Item WITHER_HOE = new WitherHoe("wither_hoe", MaterialHandler.WITHER);
-	public static final Item WITHER_SPADE = new WitherShovel("wither_shovel", MaterialHandler.WITHER);
+	public static  Item WITHER_PICKAXE = new WitherPickaxe("wither_pickaxe", MaterialHandler.WITHER);
+	public static  Item WITHER_SWORD = new WitherSword("wither_sword", MaterialHandler.WITHER);
+	public static  Item WITHER_AXE = new WitherAxe("wither_axe", MaterialHandler.WITHER);
+	public static  Item WITHER_HOE = new WitherHoe("wither_hoe", MaterialHandler.WITHER);
+	public static  Item WITHER_SPADE = new WitherShovel("wither_shovel", MaterialHandler.WITHER);
 	
 }
