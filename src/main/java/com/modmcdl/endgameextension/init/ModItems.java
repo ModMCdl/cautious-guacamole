@@ -20,5 +20,11 @@ public class ModItems
 	public static  Item WITHER_AXE;
 	public static  Item WITHER_HOE;
 	public static  Item WITHER_SPADE;
-	
+	//----Blocks----//
+	public static Item FLOWER_ASPHODEL;
+	public static Item CHISELED_SOUL_BRICKS;
+	public static Item NETHER_STAR_BLOCK;
+	public static Item SOUL_BRICKS;
+
+
 }
