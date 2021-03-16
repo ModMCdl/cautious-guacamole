@@ -5,6 +5,7 @@ import com.modmcdl.endgameextension.init.ModItems;
 import com.modmcdl.endgameextension.init.ToolMaterialList;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
+import net.minecraft.block.TallFlowerBlock;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
@@ -30,6 +31,7 @@ public class RegistryEvents
         event.getRegistry().registerAll
                 (
                         ModItems.quenched_star = new Item(new Item.Properties().group(EndGame)).setRegistryName(location("quenched_nether_star")),
+                        ModItems.nether_star_shard = new Item(new Item.Properties().group(EndGame)).setRegistryName(location("nether_star_shard")),
 
                        ModItems.wither_axe = new AxeItem(ToolMaterialList.nether_star_shard, -1.0f, 1.0f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_axe")),
                        ModItems.wither_hoe = new HoeItem(ToolMaterialList.nether_star_shard, 9.0f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_hoe")),
@@ -57,7 +59,7 @@ public class RegistryEvents
                   ModBlocks.nether_star_block = new Block(Block.Properties.create(Material.GLASS).hardnessAndResistance(50.0F, 6442450944F).lightValue(2).sound(SoundType.GLASS)).setRegistryName(location("nether_star_block")),
                        ModBlocks.soul_bricks = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(30F,6000F).sound(SoundType.GROUND)).setRegistryName(location("soul_bricks")),
                      ModBlocks.chiseled_soul_bricks = new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(0.0F).sound(SoundType.GROUND)).setRegistryName(location("chiseled_soul_bricks")),
-                        ModBlocks.flower_asphodel = new Block(Block.Properties.create(Material.PLANTS).hardnessAndResistance(0.0f).sound(SoundType.PLANT)).setRegistryName(location("flower_asphodel"))
+                        ModBlocks.flower_asphodel = new TallFlowerBlock(Block.Properties.create(Material.PLANTS).hardnessAndResistance(0.0f).doesNotBlockMovement().sound(SoundType.PLANT)).setRegistryName(location("flower_asphodel"))
                 );
 
 

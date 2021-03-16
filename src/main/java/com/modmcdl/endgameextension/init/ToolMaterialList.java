@@ -6,7 +6,7 @@ import net.minecraft.item.crafting.Ingredient;
 
 public enum ToolMaterialList implements IItemTier
 {
-    nether_star_shard(8.0F,50F,3124, 10, 18,ModItems.NETHER_STAR_SHARD);
+    nether_star_shard(8.0F,50F,3124, 10, 18,ModItems.nether_star_shard);
 private float attackDamage, efficiency;
 private int durability, HarvestLevel, enchantability;
 private Item repairMaterial;
