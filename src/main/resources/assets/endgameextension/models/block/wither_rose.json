@@ -1,6 +1,0 @@
-{
-    "parent": "block/cross",
-    "textures": {
-        "cross": "endgameextension:blocks/wither_rose"
-    }
-}
