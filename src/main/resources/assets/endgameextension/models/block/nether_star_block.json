@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "endgameextension:blocks/star_block"
+        "all": "endgameextension:blocks/nether_star_block"
     }
 }

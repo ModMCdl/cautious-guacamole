@@ -2,20 +2,15 @@ package com.modmcdl.endgameextension.init;
 
 import net.minecraft.block.Block;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ModBlocks 
 {
-	
-	public static final List<Block> BLOCKS = new ArrayList<Block>();
-	
+
 	//-----Block List-----//
 	
-	public static  Block FLOWER_ASPHODEL;
-	public static  Block NETHER_STAR_BLOCK;
+	public static  Block flower_asphodel;
+	public static  Block nether_star_block;
 	
-	public static  Block SOUL_BRICKS;
-	public static  Block CHISELED_SOUL_BRICKS;
+	public static  Block soul_bricks;
+	public static  Block chiseled_soul_bricks;
 	
 }

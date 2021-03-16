@@ -1,7 +1,6 @@
 {
-    "variants": 
+    "variants":
     {
-        "normal":
-            { "model": "endgameextension:block_of_nether_star" }
+        "": { "model": "endgameextension:block/nether_star_block" }
     }
 }

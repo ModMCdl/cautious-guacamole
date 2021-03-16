@@ -9,22 +9,22 @@ public class ModItems
 {
 	public static final List<Item> ITEMS = new ArrayList<Item>();
 	
-	//-----Item List-----//
-	public static  Item QUENCHED_STAR;
-	public static  Item NETHER_STAR_SHARD;
+	//-----Items-----//
+	public static  Item quenched_star;
+	public static  Item nether_star_shard;
 	
 	//-----Tools-----//
 	
-	public static  Item WITHER_PICKAXE;
-	public static  Item WITHER_SWORD;
-	public static  Item WITHER_AXE;
-	public static  Item WITHER_HOE;
-	public static  Item WITHER_SPADE;
+	public static  Item wither_pickaxe;
+	public static  Item wither_sword;
+	public static  Item wither_axe;
+	public static  Item wither_hoe;
+	public static  Item wither_spade;
 	//----Blocks----//
-	public static Item FLOWER_ASPHODEL;
-	public static Item CHISELED_SOUL_BRICKS;
-	public static Item NETHER_STAR_BLOCK;
-	public static Item SOUL_BRICKS;
+	public static Item flower_asphodel;
+	public static Item chiseled_soul_bricks;
+	public static Item nether_star_block;
+	public static Item soul_bricks;
 
 
 }
