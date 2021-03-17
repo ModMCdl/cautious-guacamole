@@ -6,51 +6,71 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.entity.item.ItemTossEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
 
 @EventBusSubscriber
-public class WorldEventHandler 
+public class WorldEventHandler
 {
+
 
 	//Notice on world join
 	@SubscribeEvent
 	public static void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event)
 	{
-		event.player.sendMessage(new StringTextComponent("\u00A76[Endgame Extension]: \u00A7eThis mod is still being developed. Help us and report any bugs you find!"));
+		event.getPlayer().sendMessage(new StringTextComponent("\u00A76[Endgame Extension]: \u00A7eThis mod is still being developed. Help us by reporting any bugs you find!"));
 	}
-	
-	
+
+
 	//Convert Nether Star to Quenched Star
-	@SubscribeEvent
-    public static void onWorldTick(TickEvent.WorldTickEvent event)
-    {
-        World world = event.world;
-        
-        for(Entity entities : world.loadedTileEntityList)
+
+
+        static Entity entity;
+
+        @SubscribeEvent
+        static void onItemThrown(ItemTossEvent event)
         {
-            if(entities instanceof ItemEntity)
+            entity = event.getEntity();
+        }
+
+        @SubscribeEvent
+        static void onItemEntityTick(TickEvent.WorldTickEvent event)
+        {
+            World world = event.world;
+
+            if(entity != null)
             {
-                ItemEntity item = (ItemEntity) entities;
-                
-                if(item.getItem().getItem() == Items.NETHER_STAR)
+                for(Entity entities : world.getEntitiesWithinAABB(Entity.class, entity.getBoundingBox().expand(5d, 5d, 5d)))
                 {
-                    if(world.getBlockState(item.getPosition()).getMaterial() == Material.WATER)
+                    if(entities instanceof ItemEntity)
                     {
-                        int count = item.getItem().getCount();
-                        
-                        item.setItem(new ItemStack(ModItems.QUENCHED_STAR, count));
-                        
-                        //TODO playsound
+                        ItemEntity item = (ItemEntity) entities;
+
+                        if(item.getItem().getItem() == Items.NETHER_STAR)
+                        {
+                            if(world.getBlockState(new BlockPos(item.getPosition())).getMaterial() == Material.WATER)
+                            {
+                                int count = item.getItem().getCount();
+
+
+                                    item.setItem(new ItemStack(ModItems.quenched_star, count));
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
-    }
-	
-}
+
+
+
+//TODO playsound
+
+
