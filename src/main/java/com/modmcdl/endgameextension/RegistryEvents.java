@@ -33,11 +33,11 @@ public class RegistryEvents
                         ModItems.quenched_star = new Item(new Item.Properties().group(EndGame)).setRegistryName(location("quenched_nether_star")),
                         ModItems.nether_star_shard = new Item(new Item.Properties().group(EndGame)).setRegistryName(location("nether_star_shard")),
 
-                       ModItems.wither_axe = new AxeItem(ToolMaterialList.nether_star_shard, -1.0f, 1.0f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_axe")),
-                       ModItems.wither_hoe = new HoeItem(ToolMaterialList.nether_star_shard, 9.0f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_hoe")),
-                       ModItems.wither_pickaxe = new PickaxeItem(ToolMaterialList.nether_star_shard, -2, 1.2f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_pickaxe")),
-                       ModItems.wither_spade = new ShovelItem(ToolMaterialList.nether_star_shard, -1.5f, 1.0f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_shovel")),
-                     ModItems.wither_sword = new SwordItem(ToolMaterialList.nether_star_shard, 0, 1.6f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_sword")),
+                       ModItems.wither_axe = new AxeItem(ToolMaterialList.nether_star_shard, 2.0f, -3.0f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_axe")),
+                       ModItems.wither_hoe = new HoeItem(ToolMaterialList.nether_star_shard, 5.0f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_hoe")),
+                       ModItems.wither_pickaxe = new PickaxeItem(ToolMaterialList.nether_star_shard, 1, -2.8f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_pickaxe")),
+                       ModItems.wither_spade = new ShovelItem(ToolMaterialList.nether_star_shard, 1.5f, -3.0f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_shovel")),
+                     ModItems.wither_sword = new SwordItem(ToolMaterialList.nether_star_shard, 3, -2.4f, new Item.Properties().group(EndGame)).setRegistryName(location("wither_sword")),
 
 
                         ModItems.nether_star_block = new BlockItem(ModBlocks.nether_star_block, new Item.Properties().group(EndGame)).setRegistryName(ModBlocks.nether_star_block.getRegistryName()),
