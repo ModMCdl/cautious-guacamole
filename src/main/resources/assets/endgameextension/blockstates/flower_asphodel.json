@@ -1,10 +1,6 @@
 {
-    "variants": 
-    {
-        "normal":
-        [
-            { "model": "endgameextension:asphodel_var0" },
-            { "model": "endgameextension:asphodel_var1" }
-        ]
+    "variants": {
+        "half=lower": { "model": "endgameextension:block/asphodel_var0" },
+        "half=upper":    { "model": "endgameextension:block/asphodel_var1" }
     }
 }

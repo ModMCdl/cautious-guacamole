@@ -1,12 +1,12 @@
 {
     "type": "minecraft:crafting_shapeless",
-        
+
     "ingredients": [
         {
-            "item": "endgameextension:block_of_nether_star"
+            "item": "endgameextension:nether_star_block"
         }
     ],
-    
+
     "result":
     {
         "item": "minecraft:nether_star",

@@ -1,0 +1,18 @@
+{
+    "type": "miencraft:crafting_shaped",
+
+    "pattern":
+    [
+        " AA",
+        " AA",
+        "   "
+    ],
+
+    "key":
+    {
+        "A": { "item": "minecraft:nether_star"}
+    },
+
+    "result": { "item": "endgameextension:nether_star_block",
+        "count": 4 }
+}

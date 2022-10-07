@@ -1,0 +1,27 @@
+
+modLoader="javafml" #mandatory
+loaderVersion="[36,)" #mandatory (28 is current forge version)
+issueTrackerURL="https://github.com/ModMCdl/EndgameExtension/issues" #optional
+[[mods]] #mandatory
+modId="endgameextension" #mandatory
+version="${file.2.0.1}" #mandatory
+displayName="Endgame Extension" #mandatory
+displayURL="https://www.curseforge.com/minecraft/mc-mods/endgame-extension-mod" #optional
+logoFile="endgameextension_logo.png" #optional
+credits="Thanks for this mod goes to modmcdl for making the 1.12.2 version" #optional
+authors="RedRosewarrior aka Sammy aka KingOfTheGames aka DevMan_Minecraft" #optional
+description='''Expanding and adding to Minecraft's current nether endgame, Endgame Extension adds more function and utilization to the Nether Star, including new "wither-proof" Nether Star Blocks, Wither Tools, and even brings 1.14's Wither Rose into 1.12.2!'''
+# Base Forge
+[[dependencies.endgameextension]]
+modId="forge"
+mandatory=true
+versionRange="[36,)"
+ordering="NONE"
+side="BOTH"
+# Base Minecraft
+[[dependencies.endgameextension]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.16.5,1.17]"
+ordering="NONE"
+side="BOTH"
