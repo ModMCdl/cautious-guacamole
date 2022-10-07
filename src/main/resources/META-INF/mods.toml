@@ -1,6 +1,6 @@
-
 modLoader="javafml" #mandatory
 loaderVersion="[36,)" #mandatory (28 is current forge version)
+license= "GNU GENERAL PUBLIC LICENSE"
 issueTrackerURL="https://github.com/ModMCdl/EndgameExtension/issues" #optional
 [[mods]] #mandatory
 modId="endgameextension" #mandatory
