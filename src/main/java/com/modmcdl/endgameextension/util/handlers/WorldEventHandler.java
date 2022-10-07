@@ -4,16 +4,21 @@ import com.modmcdl.endgameextension.init.ModItems;
 import net.minecraft.block.material.Material;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.item.ItemEntity;
+import net.minecraft.entity.player.*;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TextComponent;
+import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.item.ItemTossEvent;
 import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
+import net.minecraftforge.server.command.TextComponentHelper;
+
+import java.util.UUID;
 
 
 @EventBusSubscriber
@@ -25,9 +30,11 @@ public class WorldEventHandler
 	@SubscribeEvent
 	public static void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event)
 	{
-		event.getPlayer().sendMessage(new StringTextComponent("\u00A76[Endgame Extension]: \u00A7eThis mod is still being developed. Help us by reporting any bugs you find!"));
+        PlayerEntity player = event.getPlayer();
+            TextComponent message = TextComponentHelper.createComponentTranslation(player, "message.welcome", player.getDisplayName());
+            message.mergeStyle(TextFormatting.GOLD);
+            player.sendMessage(message, player.getUniqueID());
 	}
-
 
 	//Convert Nether Star to Quenched Star
 

@@ -15,5 +15,7 @@
   "block.endgameextension.chiseled_soul_bricks": "Soul Brick Keystone",
   "block.endgameextension.soul_bricks": "Soul Bricks",
   "block.endgameextension.nether_star_block": "Block of Nether Stars",
-  "block.endgameextension.flower_asphodel": "Asphodel"
+  "block.endgameextension.flower_asphodel": "Asphodel",
+
+  "message.welcome":"[Endgame Extension]:This mod is still being developed. Help us by reporting any bugs you find!"
 }
