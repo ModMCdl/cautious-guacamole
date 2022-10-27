@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '2.0.1'
+version = '1.3'
 group = 'com.modmcdl.endgameextension'
 archivesBaseName = 'endgameextension'
 
@@ -76,9 +76,18 @@ minecraft {
     }
 }
 
+repositories {
+    mavenCentral()
+    maven { url 'https://www.cursemaven.com'}
+
+}
+
 dependencies {
     minecraft 'net.minecraftforge:forge:1.16.5-36.2.20'
 
+
+//project name, project id, file id
+    implementation fg.deobf("curse.maven:jei-238222:3189632")
 }
 
 jar {
@@ -86,7 +95,7 @@ jar {
         attributes([
             "Specification-Title": "endgameextension",
             "Specification-Vendor": "endgameextensionsareus",
-            "Specification-Version": "2.0.1", // We are version 1 of ourselves
+            "Specification-Version": "1.3", // We are version 1 of ourselves
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
             "Implementation-Vendor" :"endgameextensionsareus",
