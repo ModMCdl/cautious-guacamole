@@ -37,8 +37,6 @@ public class WorldEventHandler
 	}
 
 	//Convert Nether Star to Quenched Star
-
-
         static Entity entity;
 
         @SubscribeEvent

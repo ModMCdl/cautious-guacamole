@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "   ",
+        " __",
+        "   "
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:purpur_slab"
+        }
+    },
+    "result": {
+        "item": "endgameextension:chiseled_purpur",
+        "count": 1
+    }
+}

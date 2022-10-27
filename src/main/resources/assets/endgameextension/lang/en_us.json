@@ -3,7 +3,7 @@
 
   "item.endgameextension.quenched_nether_star": "Quenched Nether Star",
   "item.endgameextension.nether_star_shard": "Quenched Nether Star Shard",
-  "item.endgameextension.lavender_petal": "Lavender Petal",
+  "item.endgameextension.asphodel_petals": "Asphodel Petals",
   "item.endgameextension.lavender_bushel": "Lavender Bushel",
   "item.endgameextension.wither_sword": "Wither Sword",
   "item.endgameextension.wither_pickaxe": "Wither Pickaxe",
@@ -12,10 +12,13 @@
   "item.endgameextension.wither_hoe": "Wither Hoe",
 
   "block.endgameextension.chiseled_purpur": "Chiseled Purpur",
-  "block.endgameextension.chiseled_soul_bricks": "Soul Brick Keystone",
+  "block.endgameextension.chiseled_soul_bricks": "Chiseled Soul Bricks",
   "block.endgameextension.soul_bricks": "Soul Bricks",
   "block.endgameextension.nether_star_block": "Block of Nether Stars",
   "block.endgameextension.flower_asphodel": "Asphodel",
+  "block.endgameextension.bouquet": "Bouquet",
+  "block.endgameextension.lavender": "Lavender",
+
 
   "message.welcome":"[Endgame Extension]:This mod is still being developed. Help us by reporting any bugs you find!"
 }
