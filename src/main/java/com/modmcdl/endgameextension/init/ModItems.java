@@ -1,6 +1,7 @@
 package com.modmcdl.endgameextension.init;
 
-import net.minecraft.item.Item;
+
+import net.minecraft.world.item.Item;
 
 import java.util.ArrayList;
 import java.util.List;
