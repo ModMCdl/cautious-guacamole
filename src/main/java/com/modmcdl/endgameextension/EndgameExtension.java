@@ -1,7 +1,10 @@
 package com.modmcdl.endgameextension;
 
 
+import com.modmcdl.endgameextension.init.ModBlocks;
 import com.modmcdl.endgameextension.init.ModItems;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,9 +38,9 @@ public class EndgameExtension {
 
 	private void clientRegistries(final FMLClientSetupEvent event) {
 		Logger.getLogger("clientRegistries method registered.");
+		RenderTypeLookup.setRenderLayer(ModBlocks.lavender, RenderType.getCutout());
+
 	}
-
-
 	public static final ItemGroup ENDGAME = new ItemGroup("endgame") {
 		@Override
 		public ItemStack createIcon() {
